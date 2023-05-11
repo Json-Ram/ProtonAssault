@@ -669,3 +669,29 @@ Received Import Request.
   path: Assets/Dry_Trees/Prefab
   artifactKey: Guid(237f528977e4a9641a9595a1b55f5e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Dry_Trees/Prefab using Guid(237f528977e4a9641a9595a1b55f5e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54dea61ef0d9126f72b4f4fb146e2c93') in 0.001343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1099.499185 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(4c0128bad4a564c078c63d9fddeeafc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(4c0128bad4a564c078c63d9fddeeafc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c193248959669415e46644dd53cbf62') in 0.058239 seconds 
+========================================================================
+Received Prepare
+Switching render pipeline fbbcc878045814c11aee57fcb86bd304 -> 00000000000000000000000000000000
+Refreshing native plugins compatible for Editor in 6.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 60 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (3.0 MB). Loaded Objects now: 17233.
+Memory consumption went from 214.3 MB to 211.3 MB.
+Total: 21.334417 ms (FindLiveObjects: 0.769625 ms CreateObjectMapping: 0.147375 ms MarkObjects: 19.879833 ms  DeleteObjects: 0.536792 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
