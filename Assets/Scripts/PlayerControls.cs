@@ -6,9 +6,20 @@ using UnityEngine.InputSystem;
 public class PlayerControls : MonoBehaviour
 {
     [SerializeField] InputAction movement;
+
     [SerializeField] float controlSpeed = 20f;
     [SerializeField] float xRange = 13f;
     [SerializeField] float yRange = 7f;
+
+    [SerializeField] float positionPitchFactor = -3;
+    [SerializeField] float controlPitchFactor = -15f;
+
+    [SerializeField] float positionYawFactor = 2f;
+
+    [SerializeField] float controlRollFactor = -20f;
+
+    float xThrow;
+    float yThrow;
     
     void OnEnable()
     {
@@ -22,8 +33,14 @@ public class PlayerControls : MonoBehaviour
 
     void Update()
     {
-        float xThrow = movement.ReadValue<Vector2>().x;  
-        float yThrow = movement.ReadValue<Vector2>().y;
+        ProcessTranslation();
+        ProcessRotation();
+    }
+
+    void ProcessTranslation()
+    {
+        xThrow = movement.ReadValue<Vector2>().x;  
+        yThrow = movement.ReadValue<Vector2>().y;
 
         float xOffset = xThrow * Time.deltaTime * controlSpeed;
         float rawXPosition = transform.localPosition.x + xOffset;
@@ -34,6 +51,22 @@ public class PlayerControls : MonoBehaviour
         float clampedYPosition = Mathf.Clamp(rawYPosition, -yRange, yRange); 
 
         transform.localPosition = new Vector3 (clampedXPosition, clampedYPosition, transform.localPosition.z);
+    }
+
+    void ProcessRotation()
+    {   
+        float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
+        float pitchDueToControlThrow = yThrow * controlPitchFactor;
+
+        float yawDueToPosition = transform.localPosition.x * positionYawFactor;
+
+        float rollDueToControlThrow = xThrow * controlRollFactor;
+
+        float pitch = pitchDueToPosition + pitchDueToControlThrow;
+        float yaw = yawDueToPosition;
+        float roll = rollDueToControlThrow;
+
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
 }
