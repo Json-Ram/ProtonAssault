@@ -776,7 +776,7 @@ GameObject:
   - component: {fileID: 6131112345706527348}
   - component: {fileID: 6131112345706527354}
   - component: {fileID: 6131112345706527349}
-  - component: {fileID: 682504373928908399}
+  - component: {fileID: 1926307186417162608}
   m_Layer: 0
   m_Name: Player Ship
   m_TagString: Untagged
@@ -850,7 +850,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &682504373928908399
+--- !u!114 &1926307186417162608
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -866,11 +866,52 @@ MonoBehaviour:
     m_Name: Movement
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 19f9a392-cbbf-4259-82fc-2b5e07e5b678
+    m_Id: 0ef42989-d50c-4213-b25f-7e5674dbc181
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: a57d40a0-4ed9-47cd-a993-b31d3ac13bab
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 91421f48-b701-4b00-ae89-a3138d6b068d
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: down
+      m_Id: ea52520d-07ff-49ec-9114-4635c131a650
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 950d27fb-5cd0-4306-acf9-03fc1ed8b532
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 62fdc465-9aef-4f6c-85de-b42909486369
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
     m_Flags: 0
+  controlSpeed: 20
 --- !u!1 &6131112345709899146
 GameObject:
   m_ObjectHideFlags: 0
