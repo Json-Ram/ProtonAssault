@@ -7,6 +7,8 @@ public class PlayerControls : MonoBehaviour
 {
     [SerializeField] InputAction movement;
     [SerializeField] float controlSpeed = 20f;
+    [SerializeField] float xRange = 13f;
+    [SerializeField] float yRange = 7f;
     
     void OnEnable()
     {
@@ -24,12 +26,14 @@ public class PlayerControls : MonoBehaviour
         float yThrow = movement.ReadValue<Vector2>().y;
 
         float xOffset = xThrow * Time.deltaTime * controlSpeed;
-        float newXPosition = transform.localPosition.x + xOffset;
+        float rawXPosition = transform.localPosition.x + xOffset;
+        float clampedXPosition = Mathf.Clamp(rawXPosition, -xRange, xRange); // so player cannot move off screen / same for y axis
 
         float yOffset = yThrow * Time.deltaTime * controlSpeed;
-        float newYPosition = transform.localPosition.y + yOffset;
+        float rawYPosition = transform.localPosition.y + yOffset;
+        float clampedYPosition = Mathf.Clamp(rawYPosition, -yRange, yRange); 
 
-        transform.localPosition = new Vector3 (newXPosition, newYPosition, transform.localPosition.z);
+        transform.localPosition = new Vector3 (clampedXPosition, clampedYPosition, transform.localPosition.z);
     }
 
 }
