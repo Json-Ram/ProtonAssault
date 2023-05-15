@@ -7,16 +7,16 @@ public class PlayerControls : MonoBehaviour
 {
     [SerializeField] InputAction movement;
 
-    [SerializeField] float controlSpeed = 20f;
+    [SerializeField] float controlSpeed = 25f;
     [SerializeField] float xRange = 13f;
     [SerializeField] float yRange = 7f;
 
-    [SerializeField] float positionPitchFactor = -3;
-    [SerializeField] float controlPitchFactor = -15f;
+    [SerializeField] float positionPitchFactor = -2;
+    [SerializeField] float controlPitchFactor = -10f;
 
-    [SerializeField] float positionYawFactor = 2f;
+    [SerializeField] float positionYawFactor = 1f;
 
-    [SerializeField] float controlRollFactor = -20f;
+    [SerializeField] float controlRollFactor = -40f;
 
     float xThrow;
     float yThrow;

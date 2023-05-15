@@ -917,7 +917,7 @@ MonoBehaviour:
   positionPitchFactor: -3
   controlPitchFactor: -15
   positionYawFactor: 2
-  controlRollFactor: -20
+  controlRollFactor: -40
 --- !u!1 &6131112345709899146
 GameObject:
   m_ObjectHideFlags: 0
