@@ -12,11 +12,11 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float yRange = 7f;
 
     [SerializeField] float positionPitchFactor = -2;
-    [SerializeField] float controlPitchFactor = -10f;
+    [SerializeField] float controlPitchFactor = -50f;
 
     [SerializeField] float positionYawFactor = 1f;
 
-    [SerializeField] float controlRollFactor = -40f;
+    [SerializeField] float controlRollFactor = -110f;
 
     float xThrow;
     float yThrow;
@@ -44,7 +44,7 @@ public class PlayerControls : MonoBehaviour
 
         float xOffset = xThrow * Time.deltaTime * controlSpeed;
         float rawXPosition = transform.localPosition.x + xOffset;
-        float clampedXPosition = Mathf.Clamp(rawXPosition, -xRange, xRange); // so player cannot move off screen / same for y axis
+        float clampedXPosition = Mathf.Clamp(rawXPosition, -xRange, xRange);// so player cannot move off screen / same for y axis
 
         float yOffset = yThrow * Time.deltaTime * controlSpeed;
         float rawYPosition = transform.localPosition.y + yOffset;
@@ -66,7 +66,7 @@ public class PlayerControls : MonoBehaviour
         float yaw = yawDueToPosition;
         float roll = rollDueToControlThrow;
 
-        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+        transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(pitch, yaw, roll), Time.deltaTime);
     }
 
 }

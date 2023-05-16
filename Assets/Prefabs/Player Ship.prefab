@@ -866,12 +866,12 @@ MonoBehaviour:
     m_Name: Movement
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: bff569be-66c8-4dad-893d-d479ea410bc6
+    m_Id: 0e21f42d-7671-4a60-9987-6ba4d5588dc1
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 2D Vector
-      m_Id: 21a22138-10de-4a94-b5df-5ab3ecd89e84
+      m_Id: 14bb8243-ea98-4408-ba79-41bba3edc022
       m_Path: 2DVector
       m_Interactions: 
       m_Processors: 
@@ -879,7 +879,7 @@ MonoBehaviour:
       m_Action: Movement
       m_Flags: 4
     - m_Name: up
-      m_Id: e2eec8c9-60af-40d6-a8e0-a3654d8f8a9c
+      m_Id: 65d014cb-4bb2-4c74-8188-c367a26d690b
       m_Path: <Keyboard>/w
       m_Interactions: 
       m_Processors: 
@@ -887,7 +887,7 @@ MonoBehaviour:
       m_Action: Movement
       m_Flags: 8
     - m_Name: down
-      m_Id: 1c91a0bd-437d-4d37-987d-4082356a0f16
+      m_Id: f31da3b8-afe3-48df-a815-8da473ab1402
       m_Path: <Keyboard>/s
       m_Interactions: 
       m_Processors: 
@@ -895,7 +895,7 @@ MonoBehaviour:
       m_Action: Movement
       m_Flags: 8
     - m_Name: left
-      m_Id: e2d65a34-8839-4789-aa8c-89f65475aa1a
+      m_Id: 9203c29c-30d9-441a-a853-16b6a7311bae
       m_Path: <Keyboard>/a
       m_Interactions: 
       m_Processors: 
@@ -903,7 +903,7 @@ MonoBehaviour:
       m_Action: Movement
       m_Flags: 8
     - m_Name: right
-      m_Id: 5f6ff730-062f-48cd-9326-413ad57b5ad0
+      m_Id: 405ba26c-ac4d-4819-ac3f-29a03eac9552
       m_Path: <Keyboard>/d
       m_Interactions: 
       m_Processors: 
@@ -915,9 +915,9 @@ MonoBehaviour:
   xRange: 13
   yRange: 7
   positionPitchFactor: -2
-  controlPitchFactor: -10
+  controlPitchFactor: -100
   positionYawFactor: 1
-  controlRollFactor: -40
+  controlRollFactor: -110
 --- !u!1 &6131112345709899146
 GameObject:
   m_ObjectHideFlags: 0
