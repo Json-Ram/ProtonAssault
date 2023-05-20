@@ -915,7 +915,7 @@ MonoBehaviour:
   xRange: 13
   yRange: 7
   positionPitchFactor: -2
-  controlPitchFactor: -100
+  controlPitchFactor: -50
   positionYawFactor: 1
   controlRollFactor: -110
 --- !u!1 &6131112345709899146
