@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &299976117 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8351224484994476407, guid: bba210a8e1b6a4d5dba0bff3fbb28bd0, type: 3}
-  m_PrefabInstance: {fileID: 7035148271538263923}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,11 +451,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2b8268d367a4ea3a0fd3c11dc6bf7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &799993942 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4664127501265396695, guid: bba210a8e1b6a4d5dba0bff3fbb28bd0, type: 3}
-  m_PrefabInstance: {fileID: 7035148271538263923}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1443365878
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,14 +575,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3318121634319514833, guid: bba210a8e1b6a4d5dba0bff3fbb28bd0, type: 3}
-      propertyPath: lasers.Array.data[0]
-      value: 
-      objectReference: {fileID: 299976117}
-    - target: {fileID: 3318121634319514833, guid: bba210a8e1b6a4d5dba0bff3fbb28bd0, type: 3}
-      propertyPath: lasers.Array.data[1]
-      value: 
-      objectReference: {fileID: 799993942}
     - target: {fileID: 7035148270848283024, guid: bba210a8e1b6a4d5dba0bff3fbb28bd0, type: 3}
       propertyPath: m_RootOrder
       value: 1

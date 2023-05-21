@@ -283,11 +283,11 @@ PrefabInstance:
     - target: {fileID: 1926307186417162608, guid: 6449d099c16384569a1e9164837b0282, type: 3}
       propertyPath: lasers.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8351224484994476407}
     - target: {fileID: 1926307186417162608, guid: 6449d099c16384569a1e9164837b0282, type: 3}
       propertyPath: lasers.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4664127501265396695}
     - target: {fileID: 1926307186417162608, guid: 6449d099c16384569a1e9164837b0282, type: 3}
       propertyPath: fire.m_SingletonActionBindings.Array.size
       value: 1
@@ -386,26 +386,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6449d099c16384569a1e9164837b0282, type: 3}
+--- !u!1 &4664127501265396695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8362488955077625462, guid: 6449d099c16384569a1e9164837b0282, type: 3}
+  m_PrefabInstance: {fileID: 3798724875196720545}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7035148270449139669 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6131112345706527348, guid: 6449d099c16384569a1e9164837b0282, type: 3}
   m_PrefabInstance: {fileID: 3798724875196720545}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7035148270449139670 stripped
+--- !u!1 &8351224484994476407 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6131112345706527351, guid: 6449d099c16384569a1e9164837b0282, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5139251805970599126, guid: 6449d099c16384569a1e9164837b0282, type: 3}
   m_PrefabInstance: {fileID: 3798724875196720545}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8240446651552000660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7035148270449139670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b8b15d17798847c78765e87f1db5bba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadDelay: 1

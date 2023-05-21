@@ -71,3 +71,11 @@ The following packages were added:
   com.unity.render-pipelines.high-definition@12.1.11
   com.unity.render-pipelines.universal@12.1.11
   com.unity.shadergraph@12.1.11
+
+=== Sat May 20 22:56:06 2023
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.postprocessing@3.2.2
