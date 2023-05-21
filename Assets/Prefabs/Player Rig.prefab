@@ -283,11 +283,11 @@ PrefabInstance:
     - target: {fileID: 1926307186417162608, guid: 6449d099c16384569a1e9164837b0282, type: 3}
       propertyPath: lasers.Array.data[0]
       value: 
-      objectReference: {fileID: 9015312761012295919}
+      objectReference: {fileID: 0}
     - target: {fileID: 1926307186417162608, guid: 6449d099c16384569a1e9164837b0282, type: 3}
       propertyPath: lasers.Array.data[1]
       value: 
-      objectReference: {fileID: 678167882878066087}
+      objectReference: {fileID: 0}
     - target: {fileID: 1926307186417162608, guid: 6449d099c16384569a1e9164837b0282, type: 3}
       propertyPath: fire.m_SingletonActionBindings.Array.size
       value: 1
@@ -303,6 +303,10 @@ PrefabInstance:
     - target: {fileID: 1926307186417162608, guid: 6449d099c16384569a1e9164837b0282, type: 3}
       propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Action
       value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338532329410086656, guid: 6449d099c16384569a1e9164837b0282, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6131112345706527348, guid: 6449d099c16384569a1e9164837b0282, type: 3}
       propertyPath: m_RootOrder
@@ -352,20 +356,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 6542652797207600843, guid: 6449d099c16384569a1e9164837b0282, type: 3}
+      propertyPath: TrailModule.ratio
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542652797207600843, guid: 6449d099c16384569a1e9164837b0282, type: 3}
+      propertyPath: TrailModule.lifetime.scalar
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542652797207600843, guid: 6449d099c16384569a1e9164837b0282, type: 3}
+      propertyPath: TrailModule.sizeAffectsWidth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542652797207600843, guid: 6449d099c16384569a1e9164837b0282, type: 3}
+      propertyPath: TrailModule.minVertexDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542652797207600843, guid: 6449d099c16384569a1e9164837b0282, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542652797207600843, guid: 6449d099c16384569a1e9164837b0282, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8028397252822904114, guid: 6449d099c16384569a1e9164837b0282, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6449d099c16384569a1e9164837b0282, type: 3}
---- !u!1 &678167882878066087 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4458174667794741254, guid: 6449d099c16384569a1e9164837b0282, type: 3}
-  m_PrefabInstance: {fileID: 3798724875196720545}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7035148270449139669 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6131112345706527348, guid: 6449d099c16384569a1e9164837b0282, type: 3}
-  m_PrefabInstance: {fileID: 3798724875196720545}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &9015312761012295919 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5308366363375795534, guid: 6449d099c16384569a1e9164837b0282, type: 3}
   m_PrefabInstance: {fileID: 3798724875196720545}
   m_PrefabAsset: {fileID: 0}
