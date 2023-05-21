@@ -6,10 +6,12 @@ using UnityEngine.InputSystem;
 public class PlayerControls : MonoBehaviour
 {
     [SerializeField] InputAction movement;
+    [SerializeField] InputAction fire;
 
     [SerializeField] float controlSpeed = 25f;
     [SerializeField] float xRange = 13f;
     [SerializeField] float yRange = 7f;
+    [SerializeField] GameObject[] lasers;
 
     [SerializeField] float positionPitchFactor = -2;
     [SerializeField] float controlPitchFactor = -50f;
@@ -24,17 +26,20 @@ public class PlayerControls : MonoBehaviour
     void OnEnable()
     {
         movement.Enable();    
+        fire.Enable();
     }
 
     void OnDisable()
     {
         movement.Disable();    
+        fire.Enable();
     }
 
     void Update()
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
     }
 
     void ProcessTranslation()
@@ -69,4 +74,31 @@ public class PlayerControls : MonoBehaviour
         transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(pitch, yaw, roll), Time.deltaTime);
     }
 
+    void ProcessFiring()
+    {
+        if (fire.ReadValue<float>() > 0.5)
+        {
+            ActivateLasers();
+        }
+        else
+        {
+            DeactivateLasers();
+        }
+    }
+
+    void ActivateLasers() 
+    {
+        foreach (GameObject laser in lasers)
+        {
+            laser.SetActive(true);
+        }
+    }
+
+    void DeactivateLasers()
+    {
+        foreach (GameObject laser in lasers)
+        {
+            laser.SetActive(false);
+        }
+    }
 }
