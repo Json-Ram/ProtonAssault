@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 4206225320128904325}
   - component: {fileID: 4195131662080448091}
   - component: {fileID: 4187308784948089375}
-  - component: {fileID: 1377103211}
+  - component: {fileID: 5917066409790252748}
   m_Layer: 0
   m_Name: Small Boy
   m_TagString: Untagged
@@ -622,7 +622,7 @@ Transform:
   m_GameObject: {fileID: 4199633054476377901}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.165537, y: -0.6, z: -9.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5710785179671524553}
@@ -679,7 +679,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1377103211
+--- !u!114 &5917066409790252748
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -693,9 +693,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 1329845292236604, guid: 4cd5dc7cf5b014873b89d0c9ef0b68d0, type: 3}
   hitVFX: {fileID: 1329845292236604, guid: d9f418b2c0d224914892e217891af191, type: 3}
-  parent: {fileID: 0}
-  scorePerHit: 10
-  hitPoints: 10
+  scorePerHit: 2
+  hitPoints: 2
 --- !u!1 &4401368834165160429
 GameObject:
   m_ObjectHideFlags: 0

@@ -987,7 +987,7 @@ Transform:
   m_GameObject: {fileID: 6998102328683183018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -37.828293, y: -0.1, z: -8.6}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7453321879608958660}
@@ -1058,9 +1058,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 1329845292236604, guid: 4cd5dc7cf5b014873b89d0c9ef0b68d0, type: 3}
   hitVFX: {fileID: 1329845292236604, guid: d9f418b2c0d224914892e217891af191, type: 3}
-  parent: {fileID: 0}
-  scorePerHit: 5
-  hitPoints: 5
+  scorePerHit: 1
+  hitPoints: 1
 --- !u!1 &7337541448115367644
 GameObject:
   m_ObjectHideFlags: 0
