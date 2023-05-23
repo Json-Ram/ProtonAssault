@@ -39,7 +39,7 @@ public class PlayerControls : MonoBehaviour
     void OnDisable()
     {
         movement.Disable();    
-        fire.Enable();
+        fire.Disable();
     }
 
     void Update()
