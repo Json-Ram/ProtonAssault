@@ -112,10 +112,10 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 0
     m_Colors:
-    - _Color: {r: 0.08020889, g: 1, b: 0, a: 1}
+    - _Color: {r: 0, g: 0.9544684, b: 0.9921568, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissiveColor: {r: 0.26138735, g: 1, b: 0, a: 1}
+    - _EmissiveColor: {r: 0, g: 0.95628875, b: 0.98039216, a: 1}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
-    - _UnlitColor: {r: 0.0802089, g: 1, b: 0, a: 1}
+    - _UnlitColor: {r: 0, g: 0.9544685, b: 0.99215686, a: 1}
     - _UnlitColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

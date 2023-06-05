@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 2311073861515169279}
   - component: {fileID: 2311073861515169273}
   - component: {fileID: 2311073861515169278}
-  - component: {fileID: 2311073861515169272}
+  - component: {fileID: 1200112054060360632}
   m_Layer: 5
   m_Name: ScoreBoard
   m_TagString: Untagged
@@ -177,8 +177,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190335
-  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
+    rgba: 4294938112
+  m_fontColor: {r: 0, g: 0.5549643, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &2311073861515169272
+--- !u!114 &1200112054060360632
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
