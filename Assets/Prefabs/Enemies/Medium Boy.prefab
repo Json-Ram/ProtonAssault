@@ -865,7 +865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 1329845292236604, guid: 4cd5dc7cf5b014873b89d0c9ef0b68d0, type: 3}
   hitVFX: {fileID: 1329845292236604, guid: d9f418b2c0d224914892e217891af191, type: 3}
-  scorePerHit: 3
+  scorePerHit: 4000
   hitPoints: 3
 --- !u!95 &2104076372
 Animator:
