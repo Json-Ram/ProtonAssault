@@ -10,7 +10,7 @@ public class ScoreBoard : MonoBehaviour
     void Start()
     {
         scoreText = GetComponent<TMP_Text>();
-        scoreText.text = "Start Blastin!";
+        scoreText.text = "Start";
     }
 
     public void IncreaseScore(int increaseAmount)
